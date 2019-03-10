@@ -1,0 +1,58 @@
+{
+  "version": "0.0.1",
+  "name": "Orchestra",
+  "type": "konnector",
+  "language": "node",
+  "icon": "icon.png",
+  "slug": "orchestra",
+  "source": "git://github.com/dhayab/cozy-konnector-orchestra.git",
+  "license": "MIT",
+  "editor": "Orchestra",
+  "vendor_link": "http://www.egiweb.net",
+  "categories": ["other"],
+  "fields": {
+    "login": {
+      "type": "text"
+    },
+    "password": {
+      "type": "password"
+    },
+    "advancedFields": {
+      "folderPath": {
+        "advanced": true,
+        "isRequired": false
+      }
+    }
+  },
+  "data_types": ["home", "document"],
+  "screenshots": [],
+  "permissions": {
+    "files": {
+      "type": "io.cozy.files"
+    },
+    "accounts": {
+      "type": "io.cozy.accounts",
+      "verbs": ["GET"]
+    }
+  },
+  "developer": {
+    "name": "Dhaya",
+    "url": "https://github.com/dhayab"
+  },
+  "langs": ["fr"],
+  "locales": {
+    "fr": {
+      "short_description": "Récupère vos quittances de loyer depuis la plateforme Orchestra",
+      "long_description": "Récupère vos quittances de loyer depuis la plateforme Orchestra",
+      "permissions": {
+        "files": {
+          "description": "Utilisé pour sauvegarder les quittances de loyer"
+        },
+        "accounts": {
+          "description": "Utilisé pour obtenir les données du compte"
+        }
+      }
+    }
+  },
+  "manifest_version": "2"
+}
